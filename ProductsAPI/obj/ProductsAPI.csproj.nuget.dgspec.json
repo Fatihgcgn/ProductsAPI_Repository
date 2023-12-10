@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fatih\\Desktop\\ProductsAPI\\ProductsAPI.csproj": {}
+    "C:\\Users\\fatih\\Desktop\\ProductsAPI_Repository\\ProductsAPI\\ProductsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fatih\\Desktop\\ProductsAPI\\ProductsAPI.csproj": {
+    "C:\\Users\\fatih\\Desktop\\ProductsAPI_Repository\\ProductsAPI\\ProductsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatih\\Desktop\\ProductsAPI\\ProductsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\fatih\\Desktop\\ProductsAPI_Repository\\ProductsAPI\\ProductsAPI.csproj",
         "projectName": "ProductsAPI",
-        "projectPath": "C:\\Users\\fatih\\Desktop\\ProductsAPI\\ProductsAPI.csproj",
+        "projectPath": "C:\\Users\\fatih\\Desktop\\ProductsAPI_Repository\\ProductsAPI\\ProductsAPI.csproj",
         "packagesPath": "C:\\Users\\fatih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatih\\Desktop\\ProductsAPI\\obj\\",
+        "outputPath": "C:\\Users\\fatih\\Desktop\\ProductsAPI_Repository\\ProductsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VISUAL STUDIO 2019\\VISUAL STUDIO SDK\\NuGetPackages"
