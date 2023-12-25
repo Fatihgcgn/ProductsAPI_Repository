@@ -1,47 +1,55 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductsAPI.Models;
 
 namespace ProductsAPI.Controllers
 {
-    //localhost:5000/api/products
+    // localhost:5000/api/products
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController:ControllerBase
     {
         private readonly ProductsContext _context;
 
         public ProductsController(ProductsContext context)
         {
-           _context = context;
+            _context = context;
         }
 
-        //localhost:5000/api/products => GET (tüm productlar için)
+        // localhost:5000/api/products => GET
         [HttpGet]
-        public async Task <IActionResult> GetProducts()
+        public async Task<IActionResult> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
+            var products =  await _context.Products.ToListAsync();
             return Ok(products);
         }
 
-        //localhost:5000/api/products/1 => GET (id ile belirtilen product için)
+        // localhost:5000/api/products/5 => GET
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int? id)
-        {
-            if (id == null)
+        {   
+            if(id == null)
             {
                 return NotFound();
             }
 
-            var p = await _context.Products.FirstOrDefaultAsync(i=>i.ProductId == id);
+            var p = await _context.Products.FirstOrDefaultAsync(i => i.ProductId == id);
 
-            if (p == null)
+            if(p == null)
             {
                 return NotFound();
             }
 
             return Ok(p);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProduct(Product entity)
+        {
+            _context.Products.Add(entity);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetProduct),new { id = entity.ProductId }, entity);
         }
     }
 }
