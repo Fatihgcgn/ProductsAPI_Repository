@@ -106,3 +106,11 @@ C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Micro
 C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fatih\Desktop\ProductsAPI_Repository\ProductsAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
