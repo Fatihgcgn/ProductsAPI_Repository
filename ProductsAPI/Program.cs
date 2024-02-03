@@ -6,7 +6,17 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using ProductsAPI.Models;
 
+var MyAllowSpecificOrigin = "_myAllowSpecificOrigin";
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options => {
+    options.AddPolicy(MyAllowSpecificOrigin,
+    policy => {
+        policy.WithOrigins("http://127.0.0.1:5500")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 
 builder.Services.AddDbContext<ProductsContext>(x=>x.UseSqlite("Data Source=products.db"));
@@ -86,6 +96,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
+app.UseRouting();
+app.UseCors(MyAllowSpecificOrigin);
 app.UseAuthorization();
 
 app.MapControllers();
