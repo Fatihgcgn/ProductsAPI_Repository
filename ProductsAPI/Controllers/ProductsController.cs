@@ -117,9 +117,9 @@ namespace ProductsAPI.Controllers
             return NoContent();
         }
 
-        private static productDTO ProductToDTO(Product p)
+        private static ProductDTO ProductToDTO(Product p)
         {
-            var entity = new productDTO();
+            var entity = new ProductDTO();
             if(p != null)
             {
                 entity.ProductId = p.ProductId;

@@ -1,6 +1,6 @@
 namespace ProductsAPI.DTO
 {
-    public class productDTO
+    public class ProductDTO
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; } = null!;
